@@ -1,7 +1,7 @@
 <Solution>
-  <Project Path="../MH.BLL/MH.BLL.csproj" />
-  <Project Path="../MH.Common/MH.Common.csproj" />
-  <Project Path="../MH.DAL/MH.DAL.csproj" />
-  <Project Path="../MH.Domain/MH.Domain.csproj" />
-  <Project Path="MH.GUI.csproj" />
+  <Project Path="MH.BLL/MH.BLL.csproj" />
+  <Project Path="MH.Common/MH.Common.csproj" />
+  <Project Path="MH.DAL/MH.DAL.csproj" />
+  <Project Path="MH.Domain/MH.Domain.csproj" />
+  <Project Path="MH.GUI/MH.GUI.csproj" />
 </Solution>
