@@ -76,35 +76,36 @@ Chúng ta không gửi file **.sql**. Chúng ta dùng **Migration** để đồn
 1. Cập nhật danh sách nhánh mới nhất từ GitHub:
    ```bash
    git fetch origin
-Chuyển sang nhánh được phân công (Ví dụ nhánh của bạn là feature-phong):
+2. Chuyển sang nhánh được phân công (Ví dụ nhánh của bạn là feature-phong):
 
 git checkout feature-phong
 
-B. Quy trình làm việc hàng ngày (Code -> Commit -> Push):
+**B. Quy trình làm việc hàng ngày (Code -> Commit -> Push):
 Mỗi khi hoàn thành một phần việc, hãy thực hiện bộ lệnh sau:
 
-Lưu các thay đổi vào hàng chờ:
+1. Lưu các thay đổi vào hàng chờ:
 
 git add .
-Lưu lại bản ghi (Commit) - Phải ghi đúng mục đích, KHÔNG ghi linh tinh (như "abc", "fix"):
+
+2. Lưu lại bản ghi (Commit) - Phải ghi đúng mục đích, KHÔNG ghi linh tinh (như "abc", "fix"):
 
 git commit -m "feat: hoàn thành chức năng tìm kiếm phòng"
-Đẩy code lên đúng nhánh của mình trên GitHub:
+3. Đẩy code lên đúng nhánh của mình trên GitHub:
 
 git push origin feature-phong
 
-C. Cách cập nhật Database và Code mới từ Master:
+**C. Cách cập nhật Database và Code mới từ Master:
 Khi trưởng nhóm thông báo đã gộp code mới hoặc có Migration mới vào master, bạn cần cập nhật nhánh của mình:
 
-Chuyển về master để lấy code mới:
+1.  Chuyển về master để lấy code mới:
 
 git checkout master
 git pull origin master
-Quay lại nhánh của bạn và gộp code từ master vào:
+2.  Quay lại nhánh của bạn và gộp code từ master vào:
 
 git checkout feature-phong
 git merge master
-Cập nhật Database (nếu có Migration mới):
+3. Cập nhật Database (nếu có Migration mới):
 Mở PMC trong Visual Studio, chọn Default Project là MH.DAL và gõ:
 
 PowerShell
