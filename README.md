@@ -1,0 +1,100 @@
+## 🏨 Dự Án Quản Lý Khách Sạn - MyHotel
+Dự án này sử dụng kiến trúc 3-Layer (3 lớp) và Entity Framework Core (Database First). Đề nghị các thành viên đọc kỹ hướng dẫn này để đảm bảo code sạch, dễ bảo trì và không gây xung đột hệ thống.
+
+### 🏗 1. Cấu Trúc 3 Lớp & Luồng Dữ Liệu (Data Flow)
+Dự án được chia làm các Project con, tuân thủ luồng: GUI ⇄ BLL ⇄ DAL ⇄ Database.
+
+MH.Domain (Entities):
+
+Chứa các Class đại diện cho bảng (như NhanVien.cs, Phong.cs).
+
+Lưu ý: Đây là "ngôn ngữ chung". Tất cả các tầng khác đều phải tham chiếu (Reference) vào đây.
+
+MH.DAL (Data Access Layer):
+
+Nhiệm vụ: Chỉ thực hiện CRUD (Thêm, Xóa, Sửa, Lấy dữ liệu).
+
+Tuyệt đối: Không viết MessageBox hay Logic kiểm tra điều kiện ở đây.
+
+MH.BLL (Business Logic Layer):
+
+Nhiệm vụ: "Bộ não" của dự án. Kiểm tra tính hợp lệ (VD: Ngày đặt phòng phải sau ngày hiện tại) trước khi gửi xuống DAL.
+
+MH.GUI (Presentation Layer):
+
+Nhiệm vụ: Hiển thị và nhận dữ liệu từ người dùng.
+
+Quy tắc: Không được gọi trực tiếp tầng DAL. Phải gọi qua BLL.
+
+### 🗄 2. Lưu Ý "Sống Còn" Về Thực Thể (Entities)
+Các file trong MH.Domain/entities được sinh ra tự động từ SQL Server.
+
+⚠️ CẤM SỬA TAY: Không được thêm/xóa thuộc tính trực tiếp trong các file class này. Khi trưởng nhóm chạy lệnh cập nhật DB, mọi thay đổi viết tay của bạn sẽ bị XÓA SẠCH.
+
+Mở rộng code: Nếu muốn viết thêm hàm xử lý cho thực thể, hãy dùng từ khóa partial class ở một file riêng.
+
+Namespace: Luôn kiểm tra dòng đầu tiên phải là namespace MH.Domain.entities;.
+
+### 🔄 3. Quy Trình Đồng Bộ Database (Migration)
+Chúng ta không gửi file .sql. Chúng ta dùng Migration để đồng bộ cấu trúc DB qua GitHub.
+
+Cách để "mọc" Database trên máy bạn:
+git pull code mới nhất về.
+
+Mở Package Manager Console (PMC).
+
+Chọn Default Project là MH.DAL.
+
+Gõ lệnh: Update-Database.
+
+Lưu ý: Nếu lỗi kết nối, hãy mở file MyHotelContext.cs trong DAL và sửa lại Server=.\SQLEXPRESS cho đúng tên Instance SQL của máy bạn.
+
+Lưu ý khi muốn đổi cấu trúc bảng (Thêm cột, thêm bảng):
+Sửa bảng trong SQL Server của bạn.
+
+Chạy lệnh Scaffold để cập nhật Code:
+Scaffold-DbContext "..." Microsoft.EntityFrameworkCore.SqlServer -OutputDir entities -Force (Chạy tại MH.Domain).
+
+Tạo bản vẽ Migration mới: Add-Migration Ten_Migration_Moi -Project MH.DAL.
+
+Push code lên GitHub để người khác cập nhật.
+
+### ☁️ 4. Quy Tắc Sử Dụng Git (Tránh Xung Đột)
+Nhánh làm việc: Nhánh chính là master. Nhánh main cũ đã bỏ, không đẩy code vào đó.
+
+Thứ tự đẩy code:
+
+git add .
+
+git commit -m "mô tả rõ ràng"
+
+git pull origin master --rebase (Để gộp code của người khác vào trước).
+
+git push origin master.
+
+Lỗi index.lock: Nếu hiện lỗi này, hãy xóa file .git/index.lock trong thư mục dự án rồi chạy lại lệnh.
+
+### 🛠 5. Giải Quyết Lỗi Thường Gặp
+Lỗi Build Failed: Do code đang có gạch chân đỏ. Phải sửa hết lỗi cú pháp mới được chạy Update-Database hoặc Add-Migration.
+
+Lỗi NuGet (NU1605): Nếu thấy lỗi phiên bản thư viện (8.0.x vs 10.0.x), hãy chuột phải vào Solution -> chọn Manage NuGet Packages -> tab Consolidate để đưa tất cả về cùng một phiên bản (khuyên dùng 8.0.10).
+
+Lỗi Reference: Nếu gõ tên lớp mà Visual Studio không nhận (hiện gạch đỏ), hãy kiểm tra xem Project hiện tại đã Add Project Reference tới lớp chứa nó chưa.
+
+### ✍️ 6. Quy Tắc Đặt Tên (Coding Convention)
+Tên Class/Hàm: Viết hoa chữ cái đầu (PascalCase). VD: GetListNhanVien().
+
+Tên Biến/Tham số: Viết thường chữ cái đầu (camelCase). VD: maNhanVien.
+
+Namespace: Phải khớp với thư mục chứa file. VD: namespace MH.BLL.Services.
+
+### 🔗 Về tham chiếu (Reference)
+Bạn hãy kiểm tra lại lần cuối:
+
+MH.DAL phải Reference MH.Domain.
+
+MH.BLL phải Reference MH.DAL và MH.Domain.
+
+MH.GUI phải Reference MH.BLL và MH.Domain.
+
+⚠️ QUAN TRỌNG: Không bao giờ cho MH.Domain tham chiếu ngược lại các tầng khác.
