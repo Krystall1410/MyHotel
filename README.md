@@ -97,14 +97,17 @@ git push origin feature-phong
 **C. Cách cập nhật Database và Code mới từ Master:
 Khi trưởng nhóm thông báo đã gộp code mới hoặc có Migration mới vào master, bạn cần cập nhật nhánh của mình:
 
+
 1.  Chuyển về master để lấy code mới:
 
 git checkout master
 git pull origin master
+
 2.  Quay lại nhánh của bạn và gộp code từ master vào:
 
 git checkout feature-phong
 git merge master
+
 3. Cập nhật Database (nếu có Migration mới):
 Mở PMC trong Visual Studio, chọn Default Project là MH.DAL và gõ:
 
