@@ -7,6 +7,7 @@
 
 # 1. Gom tất cả thay đổi của mình lại
 git add .
+
 git commit -m "feat: nội dung bạn vừa làm"
 
 # 2. Làm sạch rác phát sinh khi chạy thử code
