@@ -1,5 +1,6 @@
 ﻿namespace MyHotel
 {
+    using global::MH.GUI.Forms.Auth;
     using System;
     using System.Windows.Forms;
 
@@ -14,7 +15,7 @@
                 Application.SetCompatibleTextRenderingDefault(false);
 
                 // Gọi đúng Class Main trong Namespace MH.GUI.Forms.Main
-                Application.Run(new global::MH.GUI.Forms.Main.Trangchu());
+                Application.Run(new frmLogin());
             }
         }
     }
