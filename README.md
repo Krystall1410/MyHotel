@@ -54,6 +54,13 @@ Chúng ta không gửi file **.sql**. Chúng ta dùng **Migration** để đồn
 
 ## ☁️ 4. Quy Tắc Sử Dụng Git (Tránh Xung Đột)
 * **Nhánh làm việc:** Nhánh chính là **master**. Nhánh **main** cũ đã bỏ, không đẩy code vào đó.
+* **⚠️ TUYỆT ĐỐI KHÔNG PUSH TRỰC TIẾP LÊN MASTER:** * Mỗi thành viên phải tạo một nhánh riêng từ `master` để làm việc (VD: `git checkout -b feature/login`).
+    * Sau khi hoàn thành và test kỹ trên nhánh cá nhân, mới thực hiện tạo **Pull Request** để gộp vào `master`. Việc này giúp bảo vệ nhánh chính không bị lỗi hoặc xung đột bất ngờ.
+* **Quy tắc ghi nội dung Commit:**
+    * **KHÔNG** ghi linh tinh (VD: "fix", "update", "asdfgh").
+    * **PHẢI** ghi đúng mục đích thay đổi code để dễ dàng theo dõi lịch sử dự án. 
+    * Cấu trúc khuyên dùng: `[Loại] - [Mô tả ngắn gọn]` 
+    * VD: `feat: Thêm chức năng đăng nhập`, `fix: Sửa lỗi hiển thị danh sách phòng`.
 * **Thứ tự đẩy code:**
     1.  **git add .**
     2.  **git commit -m "mô tả rõ ràng"**
