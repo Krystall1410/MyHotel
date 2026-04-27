@@ -1,52 +1,37 @@
-using System;
-using System.Windows.Forms;
+Ôªøusing MH.BLL.Services;
 
 namespace MH.GUI.Forms.Auth
 {
     public partial class frmRegister : Form
     {
+        private readonly AuthService _authService = new AuthService();
+
         public frmRegister()
         {
             InitializeComponent();
-
-            // ThÍm c·c ch?c v? c? b?n v‡o ComboBox
-            cmbRole.Items.Add("Qu?n l˝");
-            cmbRole.Items.Add("L? t‚n");
-            cmbRole.Items.Add("Nh‚n viÍn");
-            cmbRole.SelectedIndex = 1; // M?c ??nh ch?n L? t‚n
-        }
-
-        private void lnkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            // Tr? v? trang ??ng nh?p
-            this.Hide();
-            frmLogin login = new frmLogin();
-            login.ShowDialog();
-            this.Close();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            // X? l˝ logic ??ng k˝ ? ?‚y
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
-            string confirmPassword = txtConfirmPassword.Text;
-            string role = cmbRole.SelectedItem.ToString();
+            // 1. L·∫•y d·ªØ li·ªáu t·ª´ giao di·ªán
+            string user = txtUsername.Text.Trim();
+            string pass = txtPassword.Text;
+            string confirm = txtConfirmPassword.Text;
+            string role = cmbRole.Text; // Gi·∫£ ƒë·ªãnh b·∫°n ƒë√£ c√≥ d·ªØ li·ªáu trong ComboBox
 
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            // 2. G·ªçi logic x·ª≠ l√Ω t·ª´ BLL
+            string result = _authService.Register(user, pass, confirm, role);
+
+            // 3. Hi·ªÉn th·ªã k·∫øt qu·∫£
+            if (result == "Th√†nh c√¥ng")
             {
-                MessageBox.Show("Vui lÚng nh?p ??y ?? thÙng tin!", "ThÙng b·o", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                MessageBox.Show("ƒêƒÉng k√Ω th√†nh c√¥ng!", "Th√¥ng b√°o", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
-
-            if (password != confirmPassword)
+            else
             {
-                MessageBox.Show("M?t kh?u x·c nh?n khÙng kh?p!", "ThÙng b·o", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                MessageBox.Show(result, "C·∫£nh b√°o", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-            // TODO: G?i BLL ?? l?u v‡o c? s? d? li?u
-            MessageBox.Show($"??ng k˝ th‡nh cÙng t‡i kho?n: {username}\nCh?c v?: {role}", "ThÙng b·o", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
