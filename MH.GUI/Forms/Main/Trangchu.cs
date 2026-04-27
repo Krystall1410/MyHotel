@@ -1,12 +1,13 @@
-﻿namespace MH.GUI.Forms.Main
+﻿using MH.GUI.Forms.Options;
+
+namespace MH.GUI.Forms.Main
 {
     public partial class Trangchu : Form
     {
         public Trangchu()
         {
             InitializeComponent();
-            // Đăng ký sự kiện vẽ Logo
-            //picIcon.Paint += PicIcon_Paint;
+            CustomizeDesign();
         }
 
         private void PicIcon_Paint(object sender, PaintEventArgs e)
@@ -36,29 +37,79 @@
             brush.Dispose();
         }
 
-        private void pnlSidebar_Paint(object sender, PaintEventArgs e)
+        private void HideSubMenu()
         {
+            if (pnSubMenuLeTan.Visible == true)
+                pnSubMenuLeTan.Visible = false;
+            if (pnSubMenuKhachHang.Visible == true)
+                pnSubMenuKhachHang.Visible = false;
+            if (pnSubMenuDieuHanh.Visible == true)
+                pnSubMenuDieuHanh.Visible = false;
+            if (pnSubMenuTaiChinh.Visible == true)
+                pnSubMenuTaiChinh.Visible = false;
+            if (pnSubMenuHeThong.Visible == true)
+                pnSubMenuHeThong.Visible = false;
+        }
+        private void CustomizeDesign()
+        {
+            pnSubMenuLeTan.Visible = false;
+            pnSubMenuKhachHang.Visible = false;
+            pnSubMenuDieuHanh.Visible = false;
+            pnSubMenuTaiChinh.Visible = false;
+            pnSubMenuHeThong.Visible = false;
+        }
+        private void ShowSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                HideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+        private void OpenChildForm(Form childForm)
+        {
+            if (pnMain.Controls.Count > 0)
+                pnMain.Controls.Clear();
 
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+
+            pnMain.Controls.Add(childForm);
+            pnMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        //Ccas sự kiện trong nút chính
+
+        private void btnMenuLeTan_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(pnSubMenuLeTan);
+        }
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(pnSubMenuKhachHang);
+        }
+        private void btnDieuHanh_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(pnSubMenuDieuHanh);
+        }
+        private void btnTaiChinh_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(pnSubMenuTaiChinh);
         }
 
-        private void lblPMS_Click(object sender, EventArgs e)
+        private void btnHeThong_Click(object sender, EventArgs e)
         {
-
+            ShowSubMenu(pnSubMenuHeThong);
         }
-
-        private void picIcon_Click(object sender, EventArgs e)
+        //Các sự kiện của nút con 
+        private void btnSoDoPhong_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void pnlSidebar_Paint_1(object sender, PaintEventArgs e)
-        {
-
+            OpenChildForm(new frmTiepNhanKhach());
+            HideSubMenu();
         }
     }
 }
