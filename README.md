@@ -80,6 +80,7 @@ Chuyển sang nhánh được phân công (Ví dụ nhánh của bạn là featu
 
 Bash
 git checkout feature-phong
+
 B. Quy trình làm việc hàng ngày (Code -> Commit -> Push):
 Mỗi khi hoàn thành một phần việc, hãy thực hiện bộ lệnh sau:
 
@@ -95,6 +96,7 @@ git commit -m "feat: hoàn thành chức năng tìm kiếm phòng"
 
 Bash
 git push origin feature-phong
+
 C. Cách cập nhật Database và Code mới từ Master:
 Khi trưởng nhóm thông báo đã gộp code mới hoặc có Migration mới vào master, bạn cần cập nhật nhánh của mình:
 
