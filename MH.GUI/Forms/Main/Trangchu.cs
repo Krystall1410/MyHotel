@@ -1,13 +1,26 @@
-﻿using MH.GUI.Forms.Options;
+﻿using MH.GUI.Forms.Auth;
+using MH.GUI.Forms.Options;
 
 namespace MH.GUI.Forms.Main
 {
     public partial class Trangchu : Form
     {
+
         public Trangchu()
         {
             InitializeComponent();
             CustomizeDesign();
+        }
+        // Thêm vào ngay đầu class Trangchu
+        public bool IsLoggedIn { get; set; } = false;
+
+        public void UpdateMenuUI()
+        {
+            
+            if (btnLogout != null)
+            {
+                btnLogout.Visible = IsLoggedIn;
+            }
         }
 
         private void PicIcon_Paint(object sender, PaintEventArgs e)
@@ -100,7 +113,6 @@ namespace MH.GUI.Forms.Main
         {
             ShowSubMenu(pnSubMenuTaiChinh);
         }
-
         private void btnHeThong_Click(object sender, EventArgs e)
         {
             ShowSubMenu(pnSubMenuHeThong);
@@ -111,5 +123,34 @@ namespace MH.GUI.Forms.Main
             OpenChildForm(new frmTiepNhanKhach());
             HideSubMenu();
         }
+
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Bạn có thực sự muốn đăng xuất không?", "Xác nhận",
+                                          MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirm == DialogResult.Yes)
+            {
+                IsLoggedIn = false;
+                UpdateMenuUI(); // Ẩn nút ngay lập tức
+
+                this.Hide();
+
+                // Mở lại form Đăng nhập
+                frmLogin loginForm = new frmLogin();
+                loginForm.ShowDialog();
+
+                // Đóng hẳn trang chủ để giải phóng bộ nhớ
+                this.Close();
+            }
+        }
+  
     }
 }
+
+

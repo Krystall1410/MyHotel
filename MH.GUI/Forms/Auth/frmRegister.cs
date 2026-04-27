@@ -13,25 +13,27 @@ namespace MH.GUI.Forms.Auth
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            // 1. Lấy dữ liệu từ giao diện
             string user = txtUsername.Text.Trim();
             string pass = txtPassword.Text;
             string confirm = txtConfirmPassword.Text;
-            string role = cmbRole.Text; // Giả định bạn đã có dữ liệu trong ComboBox
+            ;
 
-            // 2. Gọi logic xử lý từ BLL
-            string result = _authService.Register(user, pass, confirm, role);
+            // Gọi BLL để lưu tài khoản vào Database
+            string result = _authService.Register(user, pass, confirm);
 
-            // 3. Hiển thị kết quả
             if (result == "Thành công")
             {
-                MessageBox.Show("Đăng ký thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đăng ký thành công! Mời bạn đăng nhập.", "Thông báo",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Đóng form đăng ký để quay về form đăng nhập đang đợi phía sau
                 this.Close();
             }
             else
             {
-                MessageBox.Show(result, "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(result, "Lỗi đăng ký", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
-}
+    }
+    

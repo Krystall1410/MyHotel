@@ -31,8 +31,6 @@
             lnkLogin = new LinkLabel();
             lblHaveAccount = new Label();
             btnRegister = new Button();
-            cmbRole = new ComboBox();
-            lblRole = new Label();
             txtConfirmPassword = new TextBox();
             lblConfirmPassword = new Label();
             txtPassword = new TextBox();
@@ -48,20 +46,19 @@
             lnkLogin.AutoSize = true;
             lnkLogin.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             lnkLogin.LinkColor = Color.DarkSlateBlue;
-            lnkLogin.Location = new Point(139, 266);
+            lnkLogin.Location = new Point(139, 230);
             lnkLogin.Name = "lnkLogin";
             lnkLogin.Size = new Size(66, 15);
             lnkLogin.TabIndex = 11;
             lnkLogin.TabStop = true;
             lnkLogin.Text = "Đăng nhập";
-          
             // 
             // lblHaveAccount
             // 
             lblHaveAccount.AutoSize = true;
             lblHaveAccount.Font = new Font("Segoe UI", 9F);
             lblHaveAccount.ForeColor = Color.DimGray;
-            lblHaveAccount.Location = new Point(17, 266);
+            lblHaveAccount.Location = new Point(17, 230);
             lblHaveAccount.Name = "lblHaveAccount";
             lblHaveAccount.Size = new Size(116, 15);
             lblHaveAccount.TabIndex = 10;
@@ -74,7 +71,7 @@
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(15, 223);
+            btnRegister.Location = new Point(17, 186);
             btnRegister.Margin = new Padding(3, 2, 3, 2);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(245, 33);
@@ -82,28 +79,6 @@
             btnRegister.Text = "ĐĂNG KÝ";
             btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
-            // 
-            // cmbRole
-            // 
-            cmbRole.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbRole.Font = new Font("Segoe UI", 10F);
-            cmbRole.FormattingEnabled = true;
-            cmbRole.Location = new Point(15, 194);
-            cmbRole.Margin = new Padding(3, 2, 3, 2);
-            cmbRole.Name = "cmbRole";
-            cmbRole.Size = new Size(246, 25);
-            cmbRole.TabIndex = 8;
-            // 
-            // lblRole
-            // 
-            lblRole.AutoSize = true;
-            lblRole.Font = new Font("Segoe UI", 9.5F);
-            lblRole.ForeColor = Color.DimGray;
-            lblRole.Location = new Point(12, 175);
-            lblRole.Name = "lblRole";
-            lblRole.Size = new Size(54, 17);
-            lblRole.TabIndex = 7;
-            lblRole.Text = "Chức vụ";
             // 
             // txtConfirmPassword
             // 
@@ -187,12 +162,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 247, 251);
-            ClientSize = new Size(302, 305);
+            ClientSize = new Size(293, 266);
             Controls.Add(lnkLogin);
             Controls.Add(lblHaveAccount);
             Controls.Add(btnRegister);
-            Controls.Add(cmbRole);
-            Controls.Add(lblRole);
             Controls.Add(txtConfirmPassword);
             Controls.Add(lblConfirmPassword);
             Controls.Add(txtPassword);
@@ -221,8 +194,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblConfirmPassword;
         private System.Windows.Forms.TextBox txtConfirmPassword;
-        private System.Windows.Forms.Label lblRole;
-        private System.Windows.Forms.ComboBox cmbRole;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label lblHaveAccount;
         private System.Windows.Forms.LinkLabel lnkLogin;

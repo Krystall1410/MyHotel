@@ -51,6 +51,7 @@
             lnkRegister.TabIndex = 8;
             lnkRegister.TabStop = true;
             lnkRegister.Text = "Đăng ký";
+            lnkRegister.LinkClicked += lnkRegister_LinkClicked_1;
             // 
             // lblNoAccount
             // 

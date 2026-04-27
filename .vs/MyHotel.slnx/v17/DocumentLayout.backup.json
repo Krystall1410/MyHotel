@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\main\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\main\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\main\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\main\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\auth\\frmlogin.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmlogin.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\main\\trangchu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\main\\trangchu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\auth\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,36 +27,36 @@
       "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|C:\\Users\\lenovo\\source\\repos\\MyHotel\\mh.gui\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F51A6D-2994-442F-2850-76F2E8AAB0DE}|MH.DAL\\MH.DAL.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.dal\\repositories\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F51A6D-2994-442F-2850-76F2E8AAB0DE}|MH.DAL\\MH.DAL.csproj|solutionrelative:mh.dal\\repositories\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56E80410-A4C9-5409-E481-FB8E767EBE49}|MH.BLL\\MH.BLL.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56E80410-A4C9-5409-E481-FB8E767EBE49}|MH.BLL\\MH.BLL.csproj|solutionrelative:mh.bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\auth\\frmregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\auth\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\main\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\main\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|C:\\Users\\lenovo\\source\\repos\\MyHotel\\mh.gui\\forms\\main\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\main\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{56E80410-A4C9-5409-E481-FB8E767EBE49}|MH.BLL\\MH.BLL.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56E80410-A4C9-5409-E481-FB8E767EBE49}|MH.BLL\\MH.BLL.csproj|solutionrelative:mh.bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\main\\trangchu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\main\\trangchu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94F51A6D-2994-442F-2850-76F2E8AAB0DE}|MH.DAL\\MH.DAL.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.dal\\repositories\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F51A6D-2994-442F-2850-76F2E8AAB0DE}|MH.DAL\\MH.DAL.csproj|solutionrelative:mh.dal\\repositories\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\forms\\auth\\frmregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\auth\\frmregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|C:\\Users\\lenovo\\source\\repos\\MyHotel\\mh.gui\\forms\\options\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9404F3E-C5F2-DAED-C0FA-E3315E416B78}|MH.GUI\\MH.GUI.csproj|solutionrelative:mh.gui\\forms\\options\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94F51A6D-2994-442F-2850-76F2E8AAB0DE}|MH.DAL\\MH.DAL.csproj|c:\\users\\lenovo\\source\\repos\\myhotel\\mh.dal\\contexts\\myhotelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,36 +74,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.cs",
+              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T15:09:28.12Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmRegister.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.Designer.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmRegister.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.Designer.cs",
+              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmRegister.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T15:10:17.009Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmRegister.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmRegister.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.cs",
+              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmRegister.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T14:23:37.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Trangchu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.Designer.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Main\\Trangchu.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.Designer.cs",
+              "RelativeToolTip": "MH.GUI\\Forms\\Main\\Trangchu.Designer.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAWwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T15:14:42.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Trangchu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Main\\Trangchu.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.cs [Design]",
+              "RelativeToolTip": "MH.GUI\\Forms\\Main\\Trangchu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T17:34:40.943Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Trangchu.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Main\\Trangchu.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.cs",
+              "RelativeToolTip": "MH.GUI\\Forms\\Main\\Trangchu.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwJUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T15:14:57.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLogin.resx",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.resx",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmLogin.resx",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.resx",
+              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmLogin.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-04-27T18:12:07.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.Designer.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.Designer.cs",
+              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmLogin.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T15:10:27.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.BLL\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "MH.BLL\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.BLL\\Services\\AuthService.cs",
               "RelativeToolTip": "MH.BLL\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwA4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:00:22.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-27T15:00:22.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.cs",
-              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.cs [Design]",
-              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T14:19:33.96Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "TaiKhoanRepository.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.DAL\\Repositories\\TaiKhoanRepository.cs",
               "RelativeDocumentMoniker": "MH.DAL\\Repositories\\TaiKhoanRepository.cs",
@@ -99,120 +199,34 @@
               "RelativeToolTip": "MH.DAL\\Repositories\\TaiKhoanRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T14:58:50.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.cs",
-              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.cs",
-              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmLogin.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wDAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:09:28.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmRegister.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.cs",
-              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmRegister.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.cs",
-              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmRegister.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwCQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T14:23:37.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.Designer.cs",
-              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmLogin.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.Designer.cs",
-              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmLogin.Designer.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAuwLsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:10:27.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Trangchu.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.cs",
-              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Main\\Trangchu.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.cs",
-              "RelativeToolTip": "MH.GUI\\Forms\\Main\\Trangchu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:14:57.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Trangchu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.Designer.cs",
-              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Main\\Trangchu.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.Designer.cs",
-              "RelativeToolTip": "MH.GUI\\Forms\\Main\\Trangchu.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:14:42.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MyHotelContext.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.DAL\\Contexts\\MyHotelContext.cs",
-              "RelativeDocumentMoniker": "MH.DAL\\Contexts\\MyHotelContext.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.DAL\\Contexts\\MyHotelContext.cs",
-              "RelativeToolTip": "MH.DAL\\Contexts\\MyHotelContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:03:17.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmRegister.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.Designer.cs",
-              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmRegister.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.Designer.cs",
-              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmRegister.Designer.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAewDgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T15:10:17.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-27T14:58:50.929Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "MH.GUI.csproj",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Source\\Repos\\MyHotel\\MH.GUI\\MH.GUI.csproj",
-              "RelativeDocumentMoniker": "MH.GUI\\MH.GUI.csproj",
-              "ToolTip": "C:\\Users\\lenovo\\Source\\Repos\\MyHotel\\MH.GUI\\MH.GUI.csproj",
-              "RelativeToolTip": "MH.GUI\\MH.GUI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-27T14:56:32.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Program.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Program.cs",
+              "RelativeToolTip": "MH.GUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T17:53:26.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmLogin.cs [Design]",
+              "RelativeToolTip": "MH.GUI\\Forms\\Auth\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T14:19:33.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmRegister.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Auth\\frmRegister.cs",
               "RelativeDocumentMoniker": "MH.GUI\\Forms\\Auth\\frmRegister.cs",
@@ -222,19 +236,47 @@
               "WhenOpened": "2026-04-27T14:19:13.171Z"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MyHotelContext.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.DAL\\Contexts\\MyHotelContext.cs",
+              "RelativeDocumentMoniker": "MH.DAL\\Contexts\\MyHotelContext.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.DAL\\Contexts\\MyHotelContext.cs",
+              "RelativeToolTip": "MH.DAL\\Contexts\\MyHotelContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T15:03:17.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MH.GUI.csproj",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Source\\Repos\\MyHotel\\MH.GUI\\MH.GUI.csproj",
+              "RelativeDocumentMoniker": "MH.GUI\\MH.GUI.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Source\\Repos\\MyHotel\\MH.GUI\\MH.GUI.csproj",
+              "RelativeToolTip": "MH.GUI\\MH.GUI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-27T14:56:32.571Z"
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Trangchu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.cs",
-              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Main\\Trangchu.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Main\\Trangchu.cs [Design]",
-              "RelativeToolTip": "MH.GUI\\Forms\\Main\\Trangchu.cs [Design]",
+              "DocumentIndex": 13,
+              "Title": "KhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Options\\KhachHang.cs",
+              "RelativeDocumentMoniker": "MH.GUI\\Forms\\Options\\KhachHang.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\MyHotel\\MH.GUI\\Forms\\Options\\KhachHang.cs [Design]",
+              "RelativeToolTip": "MH.GUI\\Forms\\Options\\KhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T14:55:12.976Z"
+              "WhenOpened": "2026-04-27T16:50:00.83Z"
             }
           ]
         }

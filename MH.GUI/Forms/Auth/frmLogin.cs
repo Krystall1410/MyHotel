@@ -20,30 +20,36 @@ namespace MH.GUI.Forms.Auth
 
             // Gọi tầng BLL xử lý
             string result = _authService.Login(user, pass);
-
             if (result == "Thành công")
             {
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo");
 
-                // Mở Form trang chủ (Trangchu.cs trong folder Main)
-                this.Hide();
-                // frmMain main = new frmMain(); // Tên class thực tế của bạn trong Trangchu.cs
-                // main.Show();
-            }
-            else
-            {
-                // Hiển thị lỗi từ BLL trả về
-                MessageBox.Show(result, "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Hide(); // Ẩn form Login thay vì Close ngay
+
+                // Khởi tạo Trang chủ từ folder Main
+                var main = new MH.GUI.Forms.Main.Trangchu();
+
+                main.IsLoggedIn = true;
+                main.UpdateMenuUI();
+
+                // Sử dụng ShowDialog để chặn luồng, đảm bảo Form hiện lên
+                main.ShowDialog();
+
+                this.Close(); // Sau khi tắt Trang chủ thì mới đóng hẳn ứng dụng
             }
         }
 
-        private void lnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lnkRegister_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Chuyển sang Form đăng ký
             this.Hide();
+
+            // 2. Mở form Đăng ký dưới dạng hội thoại
             frmRegister registerForm = new frmRegister();
             registerForm.ShowDialog();
+
+            // 3. Sau khi form Đăng ký đóng lại, hiện lại form Login để người dùng đăng nhập
             this.Show();
+
         }
     }
 }

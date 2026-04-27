@@ -7,7 +7,7 @@ namespace MH.BLL.Services
     {
         private readonly TaiKhoanRepository _repo = new TaiKhoanRepository();
 
-        public string Register(string user, string pass, string confirm, string role)
+        public string Register(string user, string pass, string confirm)
         {
             if (string.IsNullOrEmpty(user) || string.IsNullOrEmpty(pass))
                 return "Vui lòng nhập đầy đủ thông tin!";
@@ -22,7 +22,7 @@ namespace MH.BLL.Services
             {
                 TenDangNhap = user,
                 MatKhau = pass, // Gợi ý: Nên mã hóa mật khẩu ở đây
-                MaChucVu = role
+               
             };
 
             return _repo.AddAccount(newAcc) ? "Thành công" : "Lỗi hệ thống!";
