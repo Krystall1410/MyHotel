@@ -68,6 +68,58 @@ Chúng ta không gửi file **.sql**. Chúng ta dùng **Migration** để đồn
     4.  **git push origin master**.
 * **Lỗi index.lock:** Nếu hiện lỗi này, hãy xóa file **.git/index.lock** trong thư mục dự án rồi chạy lại lệnh.
 
+* ###  Quy Tắc Sử Dụng Git & Làm Việc Nhóm (Teamwork)
+
+Để dự án không bị xung đột, chúng ta tuân thủ quy trình làm việc trên **Nhánh riêng (Branch)**. Tuyệt đối **KHÔNG PUSH TRỰC TIẾP LÊN MASTER**.
+
+#### **A. Lệnh dành cho người mới bắt đầu (Lần đầu nhận nhánh):**
+1. Cập nhật danh sách nhánh mới nhất từ GitHub:
+   ```bash
+   git fetch origin
+Chuyển sang nhánh được phân công (Ví dụ nhánh của bạn là feature-phong):
+
+Bash
+git checkout feature-phong
+B. Quy trình làm việc hàng ngày (Code -> Commit -> Push):
+Mỗi khi hoàn thành một phần việc, hãy thực hiện bộ lệnh sau:
+
+Lưu các thay đổi vào hàng chờ:
+
+Bash
+git add .
+Lưu lại bản ghi (Commit) - Phải ghi đúng mục đích, KHÔNG ghi linh tinh (như "abc", "fix"):
+
+Bash
+git commit -m "feat: hoàn thành chức năng tìm kiếm phòng"
+Đẩy code lên đúng nhánh của mình trên GitHub:
+
+Bash
+git push origin feature-phong
+C. Cách cập nhật Database và Code mới từ Master:
+Khi trưởng nhóm thông báo đã gộp code mới hoặc có Migration mới vào master, bạn cần cập nhật nhánh của mình:
+
+Chuyển về master để lấy code mới:
+
+Bash
+git checkout master
+git pull origin master
+Quay lại nhánh của bạn và gộp code từ master vào:
+
+Bash
+git checkout feature-phong
+git merge master
+Cập nhật Database (nếu có Migration mới):
+Mở PMC trong Visual Studio, chọn Default Project là MH.DAL và gõ:
+
+PowerShell
+Update-Database
+⚠️ Quy tắc Commit Message (Bắt buộc):
+feat: Cho chức năng mới (VD: feat: làm giao diện nhân viên).
+
+fix: Cho việc sửa lỗi (VD: fix: sửa lỗi không lưu được khách hàng).
+
+refactor: Cho việc tối ưu code nhưng không đổi chức năng.
+
 ---
 
 ## 🛠 5. Giải Quyết Lỗi Thường Gặp
@@ -97,42 +149,6 @@ Tạo bản vẽ Migration mới: Add-Migration Ten_Migration_Moi -Project MH.DA
 
 Push code lên GitHub để người khác cập nhật.
 
-### ☁️ 4. Quy Tắc Sử Dụng Git (Tránh Xung Đột)
-Nhánh làm việc: Nhánh chính là master. Nhánh main cũ đã bỏ, không đẩy code vào đó.
 
-Thứ tự đẩy code:
-
-git add .
-
-git commit -m "mô tả rõ ràng"
-
-git pull origin master --rebase (Để gộp code của người khác vào trước).
-
-git push origin master.
-
-Lỗi index.lock: Nếu hiện lỗi này, hãy xóa file .git/index.lock trong thư mục dự án rồi chạy lại lệnh.
-
-### 🛠 5. Giải Quyết Lỗi Thường Gặp
-Lỗi Build Failed: Do code đang có gạch chân đỏ. Phải sửa hết lỗi cú pháp mới được chạy Update-Database hoặc Add-Migration.
-
-Lỗi NuGet (NU1605): Nếu thấy lỗi phiên bản thư viện (8.0.x vs 10.0.x), hãy chuột phải vào Solution -> chọn Manage NuGet Packages -> tab Consolidate để đưa tất cả về cùng một phiên bản (khuyên dùng 8.0.10).
-
-Lỗi Reference: Nếu gõ tên lớp mà Visual Studio không nhận (hiện gạch đỏ), hãy kiểm tra xem Project hiện tại đã Add Project Reference tới lớp chứa nó chưa.
-
-### ✍️ 6. Quy Tắc Đặt Tên (Coding Convention)
-Tên Class/Hàm: Viết hoa chữ cái đầu (PascalCase). VD: GetListNhanVien().
-
-Tên Biến/Tham số: Viết thường chữ cái đầu (camelCase). VD: maNhanVien.
-
-Namespace: Phải khớp với thư mục chứa file. VD: namespace MH.BLL.Services.
-
-### 🔗 Về tham chiếu (Reference)
-Bạn hãy kiểm tra lại lần cuối:
-
-MH.DAL phải Reference MH.Domain.
-
-MH.BLL phải Reference MH.DAL và MH.Domain.
-
-MH.GUI phải Reference MH.BLL và MH.Domain.
 
 ⚠️ QUAN TRỌNG: Không bao giờ cho MH.Domain tham chiếu ngược lại các tầng khác.
