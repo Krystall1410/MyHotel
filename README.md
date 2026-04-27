@@ -78,7 +78,6 @@ Chúng ta không gửi file **.sql**. Chúng ta dùng **Migration** để đồn
    git fetch origin
 Chuyển sang nhánh được phân công (Ví dụ nhánh của bạn là feature-phong):
 
-Bash
 git checkout feature-phong
 
 B. Quy trình làm việc hàng ngày (Code -> Commit -> Push):
@@ -86,15 +85,12 @@ Mỗi khi hoàn thành một phần việc, hãy thực hiện bộ lệnh sau:
 
 Lưu các thay đổi vào hàng chờ:
 
-Bash
 git add .
 Lưu lại bản ghi (Commit) - Phải ghi đúng mục đích, KHÔNG ghi linh tinh (như "abc", "fix"):
 
-Bash
 git commit -m "feat: hoàn thành chức năng tìm kiếm phòng"
 Đẩy code lên đúng nhánh của mình trên GitHub:
 
-Bash
 git push origin feature-phong
 
 C. Cách cập nhật Database và Code mới từ Master:
@@ -102,12 +98,10 @@ Khi trưởng nhóm thông báo đã gộp code mới hoặc có Migration mới
 
 Chuyển về master để lấy code mới:
 
-Bash
 git checkout master
 git pull origin master
 Quay lại nhánh của bạn và gộp code từ master vào:
 
-Bash
 git checkout feature-phong
 git merge master
 Cập nhật Database (nếu có Migration mới):
