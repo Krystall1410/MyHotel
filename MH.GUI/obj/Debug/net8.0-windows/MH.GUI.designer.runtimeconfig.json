@@ -1,5 +1,9 @@
 {
   "runtimeOptions": {
+<<<<<<< HEAD
+<<<<<<<< HEAD:MH.GUI/obj/Debug/net8.0-windows/MH.GUI.designer.runtimeconfig.json
+=======
+>>>>>>> origin/CongHung
     "tfm": "net8.0",
     "frameworks": [
       {
@@ -12,6 +16,7 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\ADMIN\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\ADMIN\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -19,6 +24,22 @@
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+========
+    "tfm": "net10.0",
+    "additionalProbingPaths": [
+=======
+>>>>>>> origin/CongHung
+      "C:\\Users\\lenovo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lenovo\\.nuget\\packages"
+    ],
+    "configProperties": {
+<<<<<<< HEAD
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
+>>>>>>>> origin/CongHung:MH.GUI/obj/Debug/net10.0-windows/MH.GUI.designer.runtimeconfig.json
+=======
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+>>>>>>> origin/CongHung
       "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }

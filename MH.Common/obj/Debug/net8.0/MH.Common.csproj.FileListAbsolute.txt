@@ -1,0 +1,15 @@
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\bin\Debug\net8.0\MH.Common.deps.json
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\bin\Debug\net8.0\MH.Common.runtimeconfig.json
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\bin\Debug\net8.0\MH.Common.dll
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\bin\Debug\net8.0\MH.Common.pdb
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.csproj.AssemblyReference.cache
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.AssemblyInfoInputs.cache
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.AssemblyInfo.cs
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.sourcelink.json
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.dll
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\refint\MH.Common.dll
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.pdb
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\MH.Common.genruntimeconfig.cache
+C:\Users\lenovo\Source\Repos\MyHotel\MH.Common\obj\Debug\net8.0\ref\MH.Common.dll

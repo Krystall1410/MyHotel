@@ -28,181 +28,187 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lnkLogin = new System.Windows.Forms.LinkLabel();
-            this.lblHaveAccount = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.cmbRole = new System.Windows.Forms.ComboBox();
-            this.lblRole = new System.Windows.Forms.Label();
-            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
-            this.lblConfirmPassword = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lnkLogin = new LinkLabel();
+            lblHaveAccount = new Label();
+            btnRegister = new Button();
+            cmbRole = new ComboBox();
+            lblRole = new Label();
+            txtConfirmPassword = new TextBox();
+            lblConfirmPassword = new Label();
+            txtPassword = new TextBox();
+            lblPassword = new Label();
+            txtUsername = new TextBox();
+            lblUsername = new Label();
+            lblTitle = new Label();
+            SuspendLayout();
             // 
             // lnkLogin
             // 
-            this.lnkLogin.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
-            this.lnkLogin.AutoSize = true;
-            this.lnkLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lnkLogin.LinkColor = System.Drawing.Color.DarkSlateBlue;
-            this.lnkLogin.Location = new System.Drawing.Point(168, 338);
-            this.lnkLogin.Name = "lnkLogin";
-            this.lnkLogin.Size = new System.Drawing.Size(85, 20);
-            this.lnkLogin.TabIndex = 11;
-            this.lnkLogin.TabStop = true;
-            this.lnkLogin.Text = "Đăng nhập";
-            this.lnkLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkLogin_LinkClicked);
+            lnkLogin.ActiveLinkColor = Color.FromArgb(79, 70, 229);
+            lnkLogin.AutoSize = true;
+            lnkLogin.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lnkLogin.LinkColor = Color.DarkSlateBlue;
+            lnkLogin.Location = new Point(139, 266);
+            lnkLogin.Name = "lnkLogin";
+            lnkLogin.Size = new Size(66, 15);
+            lnkLogin.TabIndex = 11;
+            lnkLogin.TabStop = true;
+            lnkLogin.Text = "Đăng nhập";
+          
             // 
             // lblHaveAccount
             // 
-            this.lblHaveAccount.AutoSize = true;
-            this.lblHaveAccount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblHaveAccount.ForeColor = System.Drawing.Color.DimGray;
-            this.lblHaveAccount.Location = new System.Drawing.Point(15, 338);
-            this.lblHaveAccount.Name = "lblHaveAccount";
-            this.lblHaveAccount.Size = new System.Drawing.Size(147, 20);
-            this.lblHaveAccount.TabIndex = 10;
-            this.lblHaveAccount.Text = "Bạn đã có tài khoản?";
+            lblHaveAccount.AutoSize = true;
+            lblHaveAccount.Font = new Font("Segoe UI", 9F);
+            lblHaveAccount.ForeColor = Color.DimGray;
+            lblHaveAccount.Location = new Point(17, 266);
+            lblHaveAccount.Name = "lblHaveAccount";
+            lblHaveAccount.Size = new Size(116, 15);
+            lblHaveAccount.TabIndex = 10;
+            lblHaveAccount.Text = "Bạn đã có tài khoản?";
             // 
             // btnRegister
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnRegister.FlatAppearance.BorderSize = 0;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(19, 291);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(280, 44);
-            this.btnRegister.TabIndex = 9;
-            this.btnRegister.Text = "ĐĂNG KÝ";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            btnRegister.BackColor = Color.DarkSlateBlue;
+            btnRegister.FlatAppearance.BorderSize = 0;
+            btnRegister.FlatStyle = FlatStyle.Flat;
+            btnRegister.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            btnRegister.ForeColor = Color.White;
+            btnRegister.Location = new Point(15, 223);
+            btnRegister.Margin = new Padding(3, 2, 3, 2);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(245, 33);
+            btnRegister.TabIndex = 9;
+            btnRegister.Text = "ĐĂNG KÝ";
+            btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // cmbRole
             // 
-            this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbRole.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Location = new System.Drawing.Point(19, 254);
-            this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(280, 31);
-            this.cmbRole.TabIndex = 8;
+            cmbRole.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbRole.Font = new Font("Segoe UI", 10F);
+            cmbRole.FormattingEnabled = true;
+            cmbRole.Location = new Point(15, 194);
+            cmbRole.Margin = new Padding(3, 2, 3, 2);
+            cmbRole.Name = "cmbRole";
+            cmbRole.Size = new Size(246, 25);
+            cmbRole.TabIndex = 8;
             // 
             // lblRole
             // 
-            this.lblRole.AutoSize = true;
-            this.lblRole.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblRole.ForeColor = System.Drawing.Color.DimGray;
-            this.lblRole.Location = new System.Drawing.Point(15, 230);
-            this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(66, 21);
-            this.lblRole.TabIndex = 7;
-            this.lblRole.Text = "Chức vụ";
+            lblRole.AutoSize = true;
+            lblRole.Font = new Font("Segoe UI", 9.5F);
+            lblRole.ForeColor = Color.DimGray;
+            lblRole.Location = new Point(12, 175);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(54, 17);
+            lblRole.TabIndex = 7;
+            lblRole.Text = "Chức vụ";
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtConfirmPassword.Location = new System.Drawing.Point(19, 197);
-            this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.PasswordChar = '●';
-            this.txtConfirmPassword.Size = new System.Drawing.Size(280, 30);
-            this.txtConfirmPassword.TabIndex = 6;
+            txtConfirmPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtConfirmPassword.Font = new Font("Segoe UI", 10F);
+            txtConfirmPassword.Location = new Point(17, 148);
+            txtConfirmPassword.Margin = new Padding(3, 2, 3, 2);
+            txtConfirmPassword.Name = "txtConfirmPassword";
+            txtConfirmPassword.PasswordChar = '●';
+            txtConfirmPassword.Size = new Size(245, 25);
+            txtConfirmPassword.TabIndex = 6;
             // 
             // lblConfirmPassword
             // 
-            this.lblConfirmPassword.AutoSize = true;
-            this.lblConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblConfirmPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmPassword.Location = new System.Drawing.Point(15, 173);
-            this.lblConfirmPassword.Name = "lblConfirmPassword";
-            this.lblConfirmPassword.Size = new System.Drawing.Size(142, 21);
-            this.lblConfirmPassword.TabIndex = 5;
-            this.lblConfirmPassword.Text = "Xác nhận mật khẩu";
+            lblConfirmPassword.AutoSize = true;
+            lblConfirmPassword.Font = new Font("Segoe UI", 9.5F);
+            lblConfirmPassword.ForeColor = Color.DimGray;
+            lblConfirmPassword.Location = new Point(13, 130);
+            lblConfirmPassword.Name = "lblConfirmPassword";
+            lblConfirmPassword.Size = new Size(118, 17);
+            lblConfirmPassword.TabIndex = 5;
+            lblConfirmPassword.Text = "Xác nhận mật khẩu";
             // 
             // txtPassword
             // 
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtPassword.Location = new System.Drawing.Point(19, 140);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(280, 30);
-            this.txtPassword.TabIndex = 4;
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.Font = new Font("Segoe UI", 10F);
+            txtPassword.Location = new Point(17, 105);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '●';
+            txtPassword.Size = new Size(245, 25);
+            txtPassword.TabIndex = 4;
             // 
             // lblPassword
             // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.lblPassword.Location = new System.Drawing.Point(15, 116);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(75, 21);
-            this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Mật khẩu";
+            lblPassword.AutoSize = true;
+            lblPassword.Font = new Font("Segoe UI", 9.5F);
+            lblPassword.ForeColor = Color.DimGray;
+            lblPassword.Location = new Point(13, 87);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(62, 17);
+            lblPassword.TabIndex = 3;
+            lblPassword.Text = "Mật khẩu";
             // 
             // txtUsername
             // 
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtUsername.Location = new System.Drawing.Point(19, 83);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(280, 30);
-            this.txtUsername.TabIndex = 2;
+            txtUsername.BorderStyle = BorderStyle.FixedSingle;
+            txtUsername.Font = new Font("Segoe UI", 10F);
+            txtUsername.Location = new Point(17, 62);
+            txtUsername.Margin = new Padding(3, 2, 3, 2);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(245, 25);
+            txtUsername.TabIndex = 2;
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.lblUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.lblUsername.Location = new System.Drawing.Point(15, 59);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(111, 21);
-            this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "Tên đăng nhập";
+            lblUsername.AutoSize = true;
+            lblUsername.Font = new Font("Segoe UI", 9.5F);
+            lblUsername.ForeColor = Color.DimGray;
+            lblUsername.Location = new Point(13, 44);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(95, 17);
+            lblUsername.TabIndex = 1;
+            lblUsername.Text = "Tên đăng nhập";
             // 
             // lblTitle
             // 
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.lblTitle.Location = new System.Drawing.Point(12, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(287, 50);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Đăng ký tài khoản";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTitle.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            lblTitle.ForeColor = Color.DarkSlateBlue;
+            lblTitle.Location = new Point(10, 7);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(251, 38);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Đăng ký tài khoản";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // frmRegister
             // 
-            this.AcceptButton = this.btnRegister;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(318, 382);
-            this.Controls.Add(this.lnkLogin);
-            this.Controls.Add(this.lblHaveAccount);
-            this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.cmbRole);
-            this.Controls.Add(this.lblRole);
-            this.Controls.Add(this.txtConfirmPassword);
-            this.Controls.Add(this.lblConfirmPassword);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "frmRegister";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng ký - MyHotel";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnRegister;
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(245, 247, 251);
+            ClientSize = new Size(302, 305);
+            Controls.Add(lnkLogin);
+            Controls.Add(lblHaveAccount);
+            Controls.Add(btnRegister);
+            Controls.Add(cmbRole);
+            Controls.Add(lblRole);
+            Controls.Add(txtConfirmPassword);
+            Controls.Add(lblConfirmPassword);
+            Controls.Add(txtPassword);
+            Controls.Add(lblPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(lblUsername);
+            Controls.Add(lblTitle);
+            Font = new Font("Segoe UI", 9F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
+            MaximizeBox = false;
+            Name = "frmRegister";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Đăng ký - MyHotel";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
