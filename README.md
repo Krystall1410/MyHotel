@@ -3,6 +3,24 @@
 **Dự án này sử dụng kiến trúc 3-Layer (3 lớp) và Entity Framework Core (Database First). Đề nghị các thành viên đọc kỹ hướng dẫn này để đảm bảo code sạch, dễ bảo trì và không gây xung đột hệ thống.**
 
 ---
+# PHẢI ĐỌC TRƯỚC KHI PUSH HOẶC PULL VỀ?
+
+# 1. Gom tất cả thay đổi của mình lại
+git add .
+
+git commit -m "feat: nội dung bạn vừa làm"
+
+# 2. Làm sạch rác phát sinh khi chạy thử code
+git clean -fd
+
+# 3. Kéo code mới nhất của các bạn khác về (tránh đè lên nhau)
+git pull origin master
+
+# 4. Kiểm tra lại lần cuối
+git status
+
+# 5. Nếu mọi thứ ok (chỉ hiện file code), thì mới push
+git push origin <ten_nhanh_cua_ban>
 
 ## 🏗 1. Cấu Trúc 3 Lớp & Luồng Dữ Liệu (Data Flow)
 Dự án được chia làm các Project con, tuân thủ luồng: **GUI ⇄ BLL ⇄ DAL ⇄ Database**.
