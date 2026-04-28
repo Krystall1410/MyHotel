@@ -31,7 +31,7 @@
             pnlSidebar = new Panel();
             pnSubMenuHeThong = new Panel();
             btnTaiKhoan = new Button();
-            btnLoaiPhong = new Button();
+            btnChucVu = new Button();
             btnQuanLiNhanSu = new Button();
             btnHeThong = new Button();
             pnSubMenuTaiChinh = new Panel();
@@ -88,22 +88,20 @@
             pnlSidebar.Controls.Add(pnlLogo);
             pnlSidebar.Dock = DockStyle.Left;
             pnlSidebar.Location = new Point(0, 0);
-            pnlSidebar.Margin = new Padding(3, 2, 3, 2);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(219, 1054);
+            pnlSidebar.Size = new Size(250, 1175);
             pnlSidebar.TabIndex = 0;
             // 
             // pnSubMenuHeThong
             // 
             pnSubMenuHeThong.BackColor = Color.SlateBlue;
             pnSubMenuHeThong.Controls.Add(btnTaiKhoan);
-            pnSubMenuHeThong.Controls.Add(btnLoaiPhong);
+            pnSubMenuHeThong.Controls.Add(btnChucVu);
             pnSubMenuHeThong.Controls.Add(btnQuanLiNhanSu);
             pnSubMenuHeThong.Dock = DockStyle.Top;
-            pnSubMenuHeThong.Location = new Point(0, 716);
-            pnSubMenuHeThong.Margin = new Padding(3, 2, 3, 2);
+            pnSubMenuHeThong.Location = new Point(0, 954);
             pnSubMenuHeThong.Name = "pnSubMenuHeThong";
-            pnSubMenuHeThong.Size = new Size(219, 142);
+            pnSubMenuHeThong.Size = new Size(250, 189);
             pnSubMenuHeThong.TabIndex = 10;
             // 
             // btnTaiKhoan
@@ -113,31 +111,30 @@
             btnTaiKhoan.FlatStyle = FlatStyle.Flat;
             btnTaiKhoan.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnTaiKhoan.ForeColor = Color.White;
-            btnTaiKhoan.Location = new Point(0, 90);
-            btnTaiKhoan.Margin = new Padding(3, 2, 3, 2);
+            btnTaiKhoan.Location = new Point(0, 120);
             btnTaiKhoan.Name = "btnTaiKhoan";
-            btnTaiKhoan.Size = new Size(219, 45);
+            btnTaiKhoan.Size = new Size(250, 60);
             btnTaiKhoan.TabIndex = 2;
             btnTaiKhoan.Text = "Quản lý Tài khoản";
             btnTaiKhoan.TextAlign = ContentAlignment.MiddleLeft;
             btnTaiKhoan.UseVisualStyleBackColor = true;
             btnTaiKhoan.Click += btnTaiKhoan_Click;
             // 
-            // btnLoaiPhong
+            // btnChucVu
             // 
-            btnLoaiPhong.Dock = DockStyle.Top;
-            btnLoaiPhong.FlatAppearance.BorderSize = 0;
-            btnLoaiPhong.FlatStyle = FlatStyle.Flat;
-            btnLoaiPhong.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLoaiPhong.ForeColor = Color.White;
-            btnLoaiPhong.Location = new Point(0, 45);
-            btnLoaiPhong.Margin = new Padding(3, 2, 3, 2);
-            btnLoaiPhong.Name = "btnLoaiPhong";
-            btnLoaiPhong.Size = new Size(219, 45);
-            btnLoaiPhong.TabIndex = 1;
-            btnLoaiPhong.Text = "Loại Phòng";
-            btnLoaiPhong.TextAlign = ContentAlignment.MiddleLeft;
-            btnLoaiPhong.UseVisualStyleBackColor = true;
+            btnChucVu.Dock = DockStyle.Top;
+            btnChucVu.FlatAppearance.BorderSize = 0;
+            btnChucVu.FlatStyle = FlatStyle.Flat;
+            btnChucVu.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnChucVu.ForeColor = Color.White;
+            btnChucVu.Location = new Point(0, 60);
+            btnChucVu.Name = "btnChucVu";
+            btnChucVu.Size = new Size(250, 60);
+            btnChucVu.TabIndex = 1;
+            btnChucVu.Text = "Quản lí chức vụ";
+            btnChucVu.TextAlign = ContentAlignment.MiddleLeft;
+            btnChucVu.UseVisualStyleBackColor = true;
+            btnChucVu.Click += btnLoaiPhong_Click;
             // 
             // btnQuanLiNhanSu
             // 
@@ -147,9 +144,8 @@
             btnQuanLiNhanSu.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuanLiNhanSu.ForeColor = Color.White;
             btnQuanLiNhanSu.Location = new Point(0, 0);
-            btnQuanLiNhanSu.Margin = new Padding(3, 2, 3, 2);
             btnQuanLiNhanSu.Name = "btnQuanLiNhanSu";
-            btnQuanLiNhanSu.Size = new Size(219, 45);
+            btnQuanLiNhanSu.Size = new Size(250, 60);
             btnQuanLiNhanSu.TabIndex = 0;
             btnQuanLiNhanSu.Text = "Quản lý Nhân sự";
             btnQuanLiNhanSu.TextAlign = ContentAlignment.MiddleLeft;
@@ -162,10 +158,9 @@
             btnHeThong.FlatStyle = FlatStyle.Flat;
             btnHeThong.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnHeThong.ForeColor = Color.White;
-            btnHeThong.Location = new Point(0, 671);
-            btnHeThong.Margin = new Padding(3, 2, 3, 2);
+            btnHeThong.Location = new Point(0, 894);
             btnHeThong.Name = "btnHeThong";
-            btnHeThong.Size = new Size(219, 45);
+            btnHeThong.Size = new Size(250, 60);
             btnHeThong.TabIndex = 10;
             btnHeThong.Text = "⚙️ Hệ Thống";
             btnHeThong.TextAlign = ContentAlignment.MiddleLeft;
@@ -178,10 +173,9 @@
             pnSubMenuTaiChinh.Controls.Add(btnDoanhThu);
             pnSubMenuTaiChinh.Controls.Add(btnLuong);
             pnSubMenuTaiChinh.Dock = DockStyle.Top;
-            pnSubMenuTaiChinh.Location = new Point(0, 576);
-            pnSubMenuTaiChinh.Margin = new Padding(3, 2, 3, 2);
+            pnSubMenuTaiChinh.Location = new Point(0, 767);
             pnSubMenuTaiChinh.Name = "pnSubMenuTaiChinh";
-            pnSubMenuTaiChinh.Size = new Size(219, 95);
+            pnSubMenuTaiChinh.Size = new Size(250, 127);
             pnSubMenuTaiChinh.TabIndex = 0;
             // 
             // btnDoanhThu
@@ -191,10 +185,9 @@
             btnDoanhThu.FlatStyle = FlatStyle.Flat;
             btnDoanhThu.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDoanhThu.ForeColor = Color.White;
-            btnDoanhThu.Location = new Point(0, 45);
-            btnDoanhThu.Margin = new Padding(3, 2, 3, 2);
+            btnDoanhThu.Location = new Point(0, 60);
             btnDoanhThu.Name = "btnDoanhThu";
-            btnDoanhThu.Size = new Size(219, 50);
+            btnDoanhThu.Size = new Size(250, 67);
             btnDoanhThu.TabIndex = 1;
             btnDoanhThu.Text = "Báo cáo doanh thu";
             btnDoanhThu.TextAlign = ContentAlignment.MiddleLeft;
@@ -208,9 +201,8 @@
             btnLuong.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLuong.ForeColor = Color.White;
             btnLuong.Location = new Point(0, 0);
-            btnLuong.Margin = new Padding(3, 2, 3, 2);
             btnLuong.Name = "btnLuong";
-            btnLuong.Size = new Size(219, 45);
+            btnLuong.Size = new Size(250, 60);
             btnLuong.TabIndex = 0;
             btnLuong.Text = "Quản lý Lương";
             btnLuong.TextAlign = ContentAlignment.MiddleLeft;
@@ -223,10 +215,9 @@
             btnTaiChinh.FlatStyle = FlatStyle.Flat;
             btnTaiChinh.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnTaiChinh.ForeColor = Color.White;
-            btnTaiChinh.Location = new Point(0, 531);
-            btnTaiChinh.Margin = new Padding(3, 2, 3, 2);
+            btnTaiChinh.Location = new Point(0, 707);
             btnTaiChinh.Name = "btnTaiChinh";
-            btnTaiChinh.Size = new Size(219, 45);
+            btnTaiChinh.Size = new Size(250, 60);
             btnTaiChinh.TabIndex = 3;
             btnTaiChinh.Text = "💰 Tài Chính";
             btnTaiChinh.TextAlign = ContentAlignment.MiddleLeft;
@@ -239,10 +230,9 @@
             pnSubMenuDieuHanh.Controls.Add(btnHieuSuat);
             pnSubMenuDieuHanh.Controls.Add(btnLichLamViec);
             pnSubMenuDieuHanh.Dock = DockStyle.Top;
-            pnSubMenuDieuHanh.Location = new Point(0, 437);
-            pnSubMenuDieuHanh.Margin = new Padding(3, 2, 3, 2);
+            pnSubMenuDieuHanh.Location = new Point(0, 582);
             pnSubMenuDieuHanh.Name = "pnSubMenuDieuHanh";
-            pnSubMenuDieuHanh.Size = new Size(219, 94);
+            pnSubMenuDieuHanh.Size = new Size(250, 125);
             pnSubMenuDieuHanh.TabIndex = 9;
             // 
             // btnHieuSuat
@@ -252,10 +242,9 @@
             btnHieuSuat.FlatStyle = FlatStyle.Flat;
             btnHieuSuat.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnHieuSuat.ForeColor = Color.White;
-            btnHieuSuat.Location = new Point(0, 45);
-            btnHieuSuat.Margin = new Padding(3, 2, 3, 2);
+            btnHieuSuat.Location = new Point(0, 60);
             btnHieuSuat.Name = "btnHieuSuat";
-            btnHieuSuat.Size = new Size(219, 45);
+            btnHieuSuat.Size = new Size(250, 60);
             btnHieuSuat.TabIndex = 12;
             btnHieuSuat.Text = "Hiệu suất công việc";
             btnHieuSuat.TextAlign = ContentAlignment.MiddleLeft;
@@ -269,9 +258,8 @@
             btnLichLamViec.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLichLamViec.ForeColor = Color.White;
             btnLichLamViec.Location = new Point(0, 0);
-            btnLichLamViec.Margin = new Padding(3, 2, 3, 2);
             btnLichLamViec.Name = "btnLichLamViec";
-            btnLichLamViec.Size = new Size(219, 45);
+            btnLichLamViec.Size = new Size(250, 60);
             btnLichLamViec.TabIndex = 11;
             btnLichLamViec.Text = "Lịch làm việc ";
             btnLichLamViec.TextAlign = ContentAlignment.MiddleLeft;
@@ -285,10 +273,9 @@
             btnDieuHanh.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDieuHanh.ForeColor = Color.White;
             btnDieuHanh.ImageAlign = ContentAlignment.MiddleRight;
-            btnDieuHanh.Location = new Point(0, 392);
-            btnDieuHanh.Margin = new Padding(3, 2, 3, 2);
+            btnDieuHanh.Location = new Point(0, 522);
             btnDieuHanh.Name = "btnDieuHanh";
-            btnDieuHanh.Size = new Size(219, 45);
+            btnDieuHanh.Size = new Size(250, 60);
             btnDieuHanh.TabIndex = 6;
             btnDieuHanh.Text = "📅 Điều Hành";
             btnDieuHanh.TextAlign = ContentAlignment.MiddleLeft;
@@ -301,10 +288,9 @@
             pnSubMenuKhachHang.Controls.Add(btnLichSuThue);
             pnSubMenuKhachHang.Controls.Add(btnDanhSachKhachHang);
             pnSubMenuKhachHang.Dock = DockStyle.Top;
-            pnSubMenuKhachHang.Location = new Point(0, 295);
-            pnSubMenuKhachHang.Margin = new Padding(3, 2, 3, 2);
+            pnSubMenuKhachHang.Location = new Point(0, 393);
             pnSubMenuKhachHang.Name = "pnSubMenuKhachHang";
-            pnSubMenuKhachHang.Size = new Size(219, 97);
+            pnSubMenuKhachHang.Size = new Size(250, 129);
             pnSubMenuKhachHang.TabIndex = 8;
             // 
             // btnLichSuThue
@@ -315,10 +301,9 @@
             btnLichSuThue.FlatStyle = FlatStyle.Flat;
             btnLichSuThue.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLichSuThue.ForeColor = Color.White;
-            btnLichSuThue.Location = new Point(0, 45);
-            btnLichSuThue.Margin = new Padding(3, 2, 3, 2);
+            btnLichSuThue.Location = new Point(0, 60);
             btnLichSuThue.Name = "btnLichSuThue";
-            btnLichSuThue.Size = new Size(219, 45);
+            btnLichSuThue.Size = new Size(250, 60);
             btnLichSuThue.TabIndex = 1;
             btnLichSuThue.Text = "Tra cứu lịch sử thuê";
             btnLichSuThue.TextAlign = ContentAlignment.MiddleLeft;
@@ -332,9 +317,8 @@
             btnDanhSachKhachHang.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDanhSachKhachHang.ForeColor = Color.White;
             btnDanhSachKhachHang.Location = new Point(0, 0);
-            btnDanhSachKhachHang.Margin = new Padding(3, 2, 3, 2);
             btnDanhSachKhachHang.Name = "btnDanhSachKhachHang";
-            btnDanhSachKhachHang.Size = new Size(219, 45);
+            btnDanhSachKhachHang.Size = new Size(250, 60);
             btnDanhSachKhachHang.TabIndex = 0;
             btnDanhSachKhachHang.Text = "Danh sách khách hàng";
             btnDanhSachKhachHang.TextAlign = ContentAlignment.MiddleLeft;
@@ -347,10 +331,9 @@
             btnKhachHang.FlatStyle = FlatStyle.Flat;
             btnKhachHang.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnKhachHang.ForeColor = Color.White;
-            btnKhachHang.Location = new Point(0, 250);
-            btnKhachHang.Margin = new Padding(3, 2, 3, 2);
+            btnKhachHang.Location = new Point(0, 333);
             btnKhachHang.Name = "btnKhachHang";
-            btnKhachHang.Size = new Size(219, 45);
+            btnKhachHang.Size = new Size(250, 60);
             btnKhachHang.TabIndex = 2;
             btnKhachHang.Text = "👥 Khách Hàng";
             btnKhachHang.TextAlign = ContentAlignment.MiddleLeft;
@@ -364,10 +347,9 @@
             pnSubMenuLeTan.Controls.Add(btnSoDoPhong);
             pnSubMenuLeTan.Controls.Add(btnTiepNhanKhach);
             pnSubMenuLeTan.Dock = DockStyle.Top;
-            pnSubMenuLeTan.Location = new Point(0, 116);
-            pnSubMenuLeTan.Margin = new Padding(3, 2, 3, 2);
+            pnSubMenuLeTan.Location = new Point(0, 154);
             pnSubMenuLeTan.Name = "pnSubMenuLeTan";
-            pnSubMenuLeTan.Size = new Size(219, 134);
+            pnSubMenuLeTan.Size = new Size(250, 179);
             pnSubMenuLeTan.TabIndex = 7;
             // 
             // btnThanhToan
@@ -377,10 +359,9 @@
             btnThanhToan.FlatStyle = FlatStyle.Flat;
             btnThanhToan.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnThanhToan.ForeColor = Color.White;
-            btnThanhToan.Location = new Point(0, 88);
-            btnThanhToan.Margin = new Padding(3, 2, 3, 2);
+            btnThanhToan.Location = new Point(0, 118);
             btnThanhToan.Name = "btnThanhToan";
-            btnThanhToan.Size = new Size(219, 45);
+            btnThanhToan.Size = new Size(250, 60);
             btnThanhToan.TabIndex = 6;
             btnThanhToan.Text = "Thanh Toán";
             btnThanhToan.TextAlign = ContentAlignment.MiddleLeft;
@@ -393,10 +374,9 @@
             btnSoDoPhong.FlatStyle = FlatStyle.Flat;
             btnSoDoPhong.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSoDoPhong.ForeColor = Color.White;
-            btnSoDoPhong.Location = new Point(0, 44);
-            btnSoDoPhong.Margin = new Padding(3, 2, 3, 2);
+            btnSoDoPhong.Location = new Point(0, 59);
             btnSoDoPhong.Name = "btnSoDoPhong";
-            btnSoDoPhong.Size = new Size(219, 44);
+            btnSoDoPhong.Size = new Size(250, 59);
             btnSoDoPhong.TabIndex = 4;
             btnSoDoPhong.Text = "Sơ Đồ Phòng";
             btnSoDoPhong.TextAlign = ContentAlignment.MiddleLeft;
@@ -411,9 +391,8 @@
             btnTiepNhanKhach.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnTiepNhanKhach.ForeColor = Color.White;
             btnTiepNhanKhach.Location = new Point(0, 0);
-            btnTiepNhanKhach.Margin = new Padding(3, 2, 3, 2);
             btnTiepNhanKhach.Name = "btnTiepNhanKhach";
-            btnTiepNhanKhach.Size = new Size(219, 44);
+            btnTiepNhanKhach.Size = new Size(250, 59);
             btnTiepNhanKhach.TabIndex = 5;
             btnTiepNhanKhach.Text = "Tiếp nhận khách hàng mới";
             btnTiepNhanKhach.TextAlign = ContentAlignment.MiddleLeft;
@@ -426,10 +405,9 @@
             btnMenuLeTan.FlatStyle = FlatStyle.Flat;
             btnMenuLeTan.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnMenuLeTan.ForeColor = Color.White;
-            btnMenuLeTan.Location = new Point(0, 64);
-            btnMenuLeTan.Margin = new Padding(3, 2, 3, 2);
+            btnMenuLeTan.Location = new Point(0, 85);
             btnMenuLeTan.Name = "btnMenuLeTan";
-            btnMenuLeTan.Size = new Size(219, 52);
+            btnMenuLeTan.Size = new Size(250, 69);
             btnMenuLeTan.TabIndex = 1;
             btnMenuLeTan.Text = "🏨 Lễ tân";
             btnMenuLeTan.TextAlign = ContentAlignment.MiddleLeft;
@@ -442,9 +420,8 @@
             pnlLogo.Controls.Add(lblIcon);
             pnlLogo.Dock = DockStyle.Top;
             pnlLogo.Location = new Point(0, 0);
-            pnlLogo.Margin = new Padding(3, 2, 3, 2);
             pnlLogo.Name = "pnlLogo";
-            pnlLogo.Size = new Size(219, 64);
+            pnlLogo.Size = new Size(250, 85);
             pnlLogo.TabIndex = 0;
             // 
             // lblPMS
@@ -452,9 +429,9 @@
             lblPMS.AutoSize = true;
             lblPMS.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPMS.ForeColor = Color.White;
-            lblPMS.Location = new Point(63, 18);
+            lblPMS.Location = new Point(72, 24);
             lblPMS.Name = "lblPMS";
-            lblPMS.Size = new Size(65, 32);
+            lblPMS.Size = new Size(82, 41);
             lblPMS.TabIndex = 1;
             lblPMS.Text = "PMS";
             // 
@@ -463,9 +440,9 @@
             lblIcon.AutoSize = true;
             lblIcon.Font = new Font("Segoe UI Emoji", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblIcon.ForeColor = Color.White;
-            lblIcon.Location = new Point(10, 16);
+            lblIcon.Location = new Point(11, 21);
             lblIcon.Name = "lblIcon";
-            lblIcon.Size = new Size(52, 36);
+            lblIcon.Size = new Size(67, 46);
             lblIcon.TabIndex = 0;
             lblIcon.Text = "🏨";
             // 
@@ -476,17 +453,17 @@
             pnlHeader.Controls.Add(lblTitle);
             pnlHeader.Controls.Add(menuStrip1);
             pnlHeader.Dock = DockStyle.Top;
-            pnlHeader.Location = new Point(219, 0);
-            pnlHeader.Margin = new Padding(3, 2, 3, 2);
+            pnlHeader.Location = new Point(250, 0);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(913, 44);
+            pnlHeader.Size = new Size(1148, 59);
             pnlHeader.TabIndex = 1;
             // 
             // btnLogout
             // 
-            btnLogout.Location = new Point(835, 20);
+            btnLogout.Location = new Point(954, 27);
+            btnLogout.Margin = new Padding(3, 4, 3, 4);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(75, 23);
+            btnLogout.Size = new Size(86, 31);
             btnLogout.TabIndex = 3;
             btnLogout.Text = "Đăng xuất";
             btnLogout.UseVisualStyleBackColor = true;
@@ -497,17 +474,19 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold);
             lblTitle.ForeColor = Color.DimGray;
-            lblTitle.Location = new Point(3, 18);
+            lblTitle.Location = new Point(3, 24);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(95, 25);
+            lblTitle.Size = new Size(121, 32);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Trang chủ";
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(913, 24);
+            menuStrip1.Padding = new Padding(7, 3, 0, 3);
+            menuStrip1.Size = new Size(1148, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -516,40 +495,42 @@
             pnMain.Controls.Add(menuStrip2);
             pnMain.Controls.Add(menuStrip3);
             pnMain.Dock = DockStyle.Fill;
-            pnMain.Location = new Point(219, 44);
-            pnMain.Margin = new Padding(3, 2, 3, 2);
+            pnMain.Location = new Point(250, 59);
             pnMain.Name = "pnMain";
-            pnMain.Size = new Size(913, 1010);
+            pnMain.Size = new Size(1148, 1116);
             pnMain.TabIndex = 2;
             // 
             // menuStrip2
             // 
+            menuStrip2.ImageScalingSize = new Size(20, 20);
             menuStrip2.Location = new Point(0, 24);
             menuStrip2.Name = "menuStrip2";
-            menuStrip2.Size = new Size(913, 24);
+            menuStrip2.Padding = new Padding(7, 3, 0, 3);
+            menuStrip2.Size = new Size(1148, 24);
             menuStrip2.TabIndex = 1;
             menuStrip2.Text = "menuStrip2";
             // 
             // menuStrip3
             // 
+            menuStrip3.ImageScalingSize = new Size(20, 20);
             menuStrip3.Location = new Point(0, 0);
             menuStrip3.Name = "menuStrip3";
-            menuStrip3.Size = new Size(913, 24);
+            menuStrip3.Padding = new Padding(7, 3, 0, 3);
+            menuStrip3.Size = new Size(1148, 24);
             menuStrip3.TabIndex = 2;
             menuStrip3.Text = "menuStrip3";
             // 
             // Trangchu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 247, 251);
-            ClientSize = new Size(1132, 1054);
+            ClientSize = new Size(1398, 1175);
             Controls.Add(pnMain);
             Controls.Add(pnlHeader);
             Controls.Add(pnlSidebar);
             Font = new Font("Segoe UI", 9F);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Trangchu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Hệ thống quản lý khách sạn - MyHotel";
@@ -598,7 +579,7 @@
         private Button btnLuong;
         private Button btnHeThong;
         private Button btnTaiKhoan;
-        private Button btnLoaiPhong;
+        private Button btnChucVu;
         private Button btnQuanLiNhanSu;
         private MenuStrip menuStrip1;
         private MenuStrip menuStrip2;

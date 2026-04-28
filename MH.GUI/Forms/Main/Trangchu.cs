@@ -11,12 +11,12 @@ namespace MH.GUI.Forms.Main
             InitializeComponent();
             CustomizeDesign();
         }
-        // Thêm vào ngay đầu class Trangchu
+
         public bool IsLoggedIn { get; set; } = false;
 
         public void UpdateMenuUI()
         {
-            
+
             if (btnLogout != null)
             {
                 btnLogout.Visible = IsLoggedIn;
@@ -25,24 +25,19 @@ namespace MH.GUI.Forms.Main
 
         private void PicIcon_Paint(object sender, PaintEventArgs e)
         {
-            // Tự động tạo một Logo bằng code (không cần file ảnh)
             Graphics g = e.Graphics;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             Pen pen = new Pen(Color.White, 2);
             Brush brush = new SolidBrush(Color.White);
 
-            // Vẽ mái nhà (Khách sạn)
             Point[] roof = { new Point(5, 20), new Point(25, 5), new Point(45, 20) };
             g.FillPolygon(brush, roof);
 
-            // Vẽ thân toà nhà
             g.DrawRectangle(pen, 10, 20, 30, 25);
 
-            // Vẽ cửa ra vào chính giữa
             g.FillRectangle(brush, 20, 30, 10, 15);
 
-            // Vẽ 2 cửa sổ
             g.FillRectangle(brush, 14, 23, 6, 5);
             g.FillRectangle(brush, 30, 23, 6, 5);
 
@@ -126,7 +121,7 @@ namespace MH.GUI.Forms.Main
 
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -137,19 +132,22 @@ namespace MH.GUI.Forms.Main
             if (confirm == DialogResult.Yes)
             {
                 IsLoggedIn = false;
-                UpdateMenuUI(); // Ẩn nút ngay lập tức
+                UpdateMenuUI();
 
                 this.Hide();
 
-                // Mở lại form Đăng nhập
                 frmLogin loginForm = new frmLogin();
                 loginForm.ShowDialog();
 
-                // Đóng hẳn trang chủ để giải phóng bộ nhớ
                 this.Close();
             }
         }
-  
+
+        private void btnLoaiPhong_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new MH.GUI.Forms.Options.frmChucVu());
+            HideSubMenu();
+        }
     }
 }
 
