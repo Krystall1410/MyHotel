@@ -23,6 +23,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MH.BLL\MH.BLL.csproj" />
+    <ProjectReference Include="..\MH.Common\MH.Common.csproj" />
+    <ProjectReference Include="..\MH.DAL\MH.DAL.csproj" />
     <ProjectReference Include="..\MH.Domain\MH.Domain.csproj" />
   </ItemGroup>
 
@@ -39,6 +41,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Forms\Options\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿namespace MH.GUI.Forms.Main
+﻿
+namespace MH.GUI.Forms.Main
 {
     partial class Trangchu
     {
@@ -90,7 +91,7 @@
             pnlSidebar.Location = new Point(0, 0);
             pnlSidebar.Margin = new Padding(3, 2, 3, 2);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(219, 1054);
+            pnlSidebar.Size = new Size(219, 870);
             pnlSidebar.TabIndex = 0;
             // 
             // pnSubMenuHeThong
@@ -121,7 +122,7 @@
             btnTaiKhoan.Text = "Quản lý Tài khoản";
             btnTaiKhoan.TextAlign = ContentAlignment.MiddleLeft;
             btnTaiKhoan.UseVisualStyleBackColor = true;
-            btnTaiKhoan.Click += btnTaiKhoan_Click;
+            btnTaiKhoan.Click += btnQuanLyTaiKhoan_Click;
             // 
             // btnLoaiPhong
             // 
@@ -138,6 +139,7 @@
             btnLoaiPhong.Text = "Loại Phòng";
             btnLoaiPhong.TextAlign = ContentAlignment.MiddleLeft;
             btnLoaiPhong.UseVisualStyleBackColor = true;
+            btnLoaiPhong.Click += btnLoaiPhong_Click;
             // 
             // btnQuanLiNhanSu
             // 
@@ -153,7 +155,6 @@
             btnQuanLiNhanSu.TabIndex = 0;
             btnQuanLiNhanSu.Text = "Quản lý Nhân sự";
             btnQuanLiNhanSu.TextAlign = ContentAlignment.MiddleLeft;
-            btnQuanLiNhanSu.UseVisualStyleBackColor = true;
             // 
             // btnHeThong
             // 
@@ -398,10 +399,9 @@
             btnSoDoPhong.Name = "btnSoDoPhong";
             btnSoDoPhong.Size = new Size(219, 44);
             btnSoDoPhong.TabIndex = 4;
-            btnSoDoPhong.Text = "Sơ Đồ Phòng";
+            btnSoDoPhong.Text = "Quản Lý Phòng";
             btnSoDoPhong.TextAlign = ContentAlignment.MiddleLeft;
             btnSoDoPhong.UseVisualStyleBackColor = true;
-            btnSoDoPhong.Click += btnSoDoPhong_Click;
             // 
             // btnTiepNhanKhach
             // 
@@ -484,6 +484,7 @@
             // 
             // btnLogout
             // 
+            btnLogout.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnLogout.Location = new Point(835, 20);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(75, 23);
@@ -505,6 +506,7 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(913, 24);
@@ -519,11 +521,12 @@
             pnMain.Location = new Point(219, 44);
             pnMain.Margin = new Padding(3, 2, 3, 2);
             pnMain.Name = "pnMain";
-            pnMain.Size = new Size(913, 1010);
+            pnMain.Size = new Size(913, 826);
             pnMain.TabIndex = 2;
             // 
             // menuStrip2
             // 
+            menuStrip2.ImageScalingSize = new Size(20, 20);
             menuStrip2.Location = new Point(0, 24);
             menuStrip2.Name = "menuStrip2";
             menuStrip2.Size = new Size(913, 24);
@@ -532,6 +535,7 @@
             // 
             // menuStrip3
             // 
+            menuStrip3.ImageScalingSize = new Size(20, 20);
             menuStrip3.Location = new Point(0, 0);
             menuStrip3.Name = "menuStrip3";
             menuStrip3.Size = new Size(913, 24);
@@ -543,7 +547,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 247, 251);
-            ClientSize = new Size(1132, 1054);
+            ClientSize = new Size(1132, 870);
             Controls.Add(pnMain);
             Controls.Add(pnlHeader);
             Controls.Add(pnlSidebar);
@@ -568,6 +572,8 @@
             ResumeLayout(false);
 
         }
+
+
 
         #endregion
 

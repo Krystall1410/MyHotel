@@ -1,12 +1,12 @@
 ﻿using MH.DAL.Repositories;
 using MH.Domain.entities;
+using System;
 
 namespace MH.BLL.Services
 {
     public class AuthService
     {
         private readonly TaiKhoanRepository _repo = new TaiKhoanRepository();
-
         public string Register(string user, string pass, string confirm)
         {
             if (string.IsNullOrEmpty(user) || string.IsNullOrEmpty(pass))
@@ -21,24 +21,20 @@ namespace MH.BLL.Services
             var newAcc = new TaiKhoan
             {
                 TenDangNhap = user,
-                MatKhau = pass, // Gợi ý: Nên mã hóa mật khẩu ở đây
-               
+                MatKhau = pass,
+                MaChucVu = "NV" 
             };
 
             return _repo.AddAccount(newAcc) ? "Thành công" : "Lỗi hệ thống!";
         }
-        public string Login(string username, string password)
+        public TaiKhoan Login(string username, string password)
         {
-            // Quy tắc: BLL kiểm tra tính hợp lệ trước
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                return "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu!";
+                return null;
             }
-
-            // Gọi DAL để xác thực
-            bool isAuthenticated = _repo.Authenticate(username, password);
-
-            return isAuthenticated ? "Thành công" : "Tên đăng nhập hoặc mật khẩu không chính xác!";
+            var account = _repo.GetAccount(username, password);
+            return account;
         }
     }
 }

@@ -17,16 +17,12 @@ namespace MH.GUI.Forms.Auth
             string pass = txtPassword.Text;
             string confirm = txtConfirmPassword.Text;
             ;
-
-            // Gọi BLL để lưu tài khoản vào Database
             string result = _authService.Register(user, pass, confirm);
 
             if (result == "Thành công")
             {
                 MessageBox.Show("Đăng ký thành công! Mời bạn đăng nhập.", "Thông báo",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Đóng form đăng ký để quay về form đăng nhập đang đợi phía sau
                 this.Close();
             }
             else

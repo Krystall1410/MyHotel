@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MH.GUI.Forms.Options
+namespace MH.GUI.Forms
 {
-    public partial class frmTiepNhanKhach : Form
+    public partial class frmPhong : Form
     {
-        public frmTiepNhanKhach()
+        public frmPhong()
         {
             InitializeComponent();
         }

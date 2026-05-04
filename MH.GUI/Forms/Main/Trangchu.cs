@@ -1,156 +1,128 @@
-﻿using MH.GUI.Forms.Auth;
-using MH.GUI.Forms.Options;
+﻿using MH.Domain;
+using MH.Domain.entities;
+using MH.GUI.Forms.Auth;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace MH.GUI.Forms.Main
 {
     public partial class Trangchu : Form
     {
+        public bool IsLoggedIn { get; set; } = false;
 
         public Trangchu()
         {
             InitializeComponent();
             CustomizeDesign();
+            CheckPermission();
         }
-        // Thêm vào ngay đầu class Trangchu
-        public bool IsLoggedIn { get; set; } = false;
 
-        public void UpdateMenuUI()
+        // --- PHÂN QUYỀN ---
+        public void CheckPermission()
         {
-            
-            if (btnLogout != null)
+            // Kiểm tra mã Admin (AD)
+            if (Session.CurrentRole != "AD")
             {
-                btnLogout.Visible = IsLoggedIn;
+                btnTaiChinh.Visible = false;
+                btnHeThong.Visible = false;
+                pnSubMenuTaiChinh.Visible = false;
+                pnSubMenuHeThong.Visible = false;
+            }
+            else
+            {
+                btnTaiChinh.Visible = true;
+                btnHeThong.Visible = true;
             }
         }
 
-        private void PicIcon_Paint(object sender, PaintEventArgs e)
+        // --- SỰ KIỆN CLICK (Mỗi nút chỉ giữ đúng 1 hàm) ---
+        private void btnMenuLeTan_Click(object sender, EventArgs e) => ShowSubMenu(pnSubMenuLeTan);
+        private void btnKhachHang_Click(object sender, EventArgs e) => ShowSubMenu(pnSubMenuKhachHang);
+        private void btnDieuHanh_Click(object sender, EventArgs e) => ShowSubMenu(pnSubMenuDieuHanh);
+        private void btnTaiChinh_Click(object sender, EventArgs e) => ShowSubMenu(pnSubMenuTaiChinh);
+        private void btnHeThong_Click(object sender, EventArgs e) => ShowSubMenu(pnSubMenuHeThong);
+
+        private void btnTaiKhoan_Click(object sender, EventArgs e) => HideSubMenu();
+
+        private void btnQuanLiNhanSu_Click(object sender, EventArgs e) => HideSubMenu();
+
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-            // Tự động tạo một Logo bằng code (không cần file ảnh)
-            Graphics g = e.Graphics;
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            if (MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Session.Clear();
+                this.Hide();
+                new frmLogin().ShowDialog();
+                this.Close();
+            }
+        }
 
-            Pen pen = new Pen(Color.White, 2);
-            Brush brush = new SolidBrush(Color.White);
-
-            // Vẽ mái nhà (Khách sạn)
-            Point[] roof = { new Point(5, 20), new Point(25, 5), new Point(45, 20) };
-            g.FillPolygon(brush, roof);
-
-            // Vẽ thân toà nhà
-            g.DrawRectangle(pen, 10, 20, 30, 25);
-
-            // Vẽ cửa ra vào chính giữa
-            g.FillRectangle(brush, 20, 30, 10, 15);
-
-            // Vẽ 2 cửa sổ
-            g.FillRectangle(brush, 14, 23, 6, 5);
-            g.FillRectangle(brush, 30, 23, 6, 5);
-
-            pen.Dispose();
-            brush.Dispose();
+        // --- HỖ TRỢ GIAO DIỆN ---
+        private void CustomizeDesign()
+        {
+            pnSubMenuLeTan.Visible = pnSubMenuKhachHang.Visible =
+            pnSubMenuDieuHanh.Visible = pnSubMenuTaiChinh.Visible =
+            pnSubMenuHeThong.Visible = false;
         }
 
         private void HideSubMenu()
         {
-            if (pnSubMenuLeTan.Visible == true)
-                pnSubMenuLeTan.Visible = false;
-            if (pnSubMenuKhachHang.Visible == true)
-                pnSubMenuKhachHang.Visible = false;
-            if (pnSubMenuDieuHanh.Visible == true)
-                pnSubMenuDieuHanh.Visible = false;
-            if (pnSubMenuTaiChinh.Visible == true)
-                pnSubMenuTaiChinh.Visible = false;
-            if (pnSubMenuHeThong.Visible == true)
-                pnSubMenuHeThong.Visible = false;
-        }
-        private void CustomizeDesign()
-        {
-            pnSubMenuLeTan.Visible = false;
-            pnSubMenuKhachHang.Visible = false;
-            pnSubMenuDieuHanh.Visible = false;
-            pnSubMenuTaiChinh.Visible = false;
+            pnSubMenuLeTan.Visible = pnSubMenuKhachHang.Visible =
+            pnSubMenuDieuHanh.Visible = pnSubMenuTaiChinh.Visible =
             pnSubMenuHeThong.Visible = false;
         }
+
         private void ShowSubMenu(Panel subMenu)
         {
-            if (subMenu.Visible == false)
+            if (!subMenu.Visible)
             {
                 HideSubMenu();
                 subMenu.Visible = true;
             }
-            else
-                subMenu.Visible = false;
+            else subMenu.Visible = false;
         }
+
         private void OpenChildForm(Form childForm)
         {
-            if (pnMain.Controls.Count > 0)
-                pnMain.Controls.Clear();
-
+            if (pnMain.Controls.Count > 0) pnMain.Controls.Clear();
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-
             pnMain.Controls.Add(childForm);
-            pnMain.Tag = childForm;
-            childForm.BringToFront();
             childForm.Show();
         }
-        //Ccas sự kiện trong nút chính
 
-        private void btnMenuLeTan_Click(object sender, EventArgs e)
+        private void PicIcon_Paint(object sender, PaintEventArgs e)
         {
-            ShowSubMenu(pnSubMenuLeTan);
-        }
-        private void btnKhachHang_Click(object sender, EventArgs e)
-        {
-            ShowSubMenu(pnSubMenuKhachHang);
-        }
-        private void btnDieuHanh_Click(object sender, EventArgs e)
-        {
-            ShowSubMenu(pnSubMenuDieuHanh);
-        }
-        private void btnTaiChinh_Click(object sender, EventArgs e)
-        {
-            ShowSubMenu(pnSubMenuTaiChinh);
-        }
-        private void btnHeThong_Click(object sender, EventArgs e)
-        {
-            ShowSubMenu(pnSubMenuHeThong);
-        }
-        //Các sự kiện của nút con 
-        private void btnSoDoPhong_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmTiepNhanKhach());
-            HideSubMenu();
-        }
-
-        private void btnTaiKhoan_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            DialogResult confirm = MessageBox.Show("Bạn có thực sự muốn đăng xuất không?", "Xác nhận",
-                                          MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (confirm == DialogResult.Yes)
+            Graphics g = e.Graphics;
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            using (Pen pen = new Pen(Color.White, 2))
+            using (Brush brush = new SolidBrush(Color.White))
             {
-                IsLoggedIn = false;
-                UpdateMenuUI(); // Ẩn nút ngay lập tức
-
-                this.Hide();
-
-                // Mở lại form Đăng nhập
-                frmLogin loginForm = new frmLogin();
-                loginForm.ShowDialog();
-
-                // Đóng hẳn trang chủ để giải phóng bộ nhớ
-                this.Close();
+                Point[] roof = { new Point(5, 20), new Point(25, 5), new Point(45, 20) };
+                g.FillPolygon(brush, roof);
+                g.DrawRectangle(pen, 10, 20, 30, 25);
+                g.FillRectangle(brush, 20, 30, 10, 15);
+                g.FillRectangle(brush, 14, 23, 6, 5);
+                g.FillRectangle(brush, 30, 23, 6, 5);
             }
         }
-  
+        private void btnQuanLyTaiKhoan_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmQuanLyTaiKhoan());
+        }
+
+        private void btnLoaiPhong_Click(object sender, EventArgs e)
+        {
+            
+            frmLoaiPhong f = new frmLoaiPhong();
+            pnMain.Controls.Clear();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            f.Dock = DockStyle.Fill;
+            pnMain.Controls.Add(f);
+            f.Show();
+        }
     }
 }
-
-
