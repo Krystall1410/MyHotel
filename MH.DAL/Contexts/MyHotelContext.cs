@@ -1,4 +1,4 @@
-﻿using MH.Domain.entities;
+using MH.Domain.entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MH.DAL.Models;
@@ -21,6 +21,8 @@ public partial class MyHotelContext : DbContext
     public virtual DbSet<LoaiPhong> LoaiPhongs { get; set; }
 
     public virtual DbSet<Luong> Luongs { get; set; }
+
+    public virtual DbSet<LichLamViec> LichLamViecs { get; set; }
 
     public virtual DbSet<Nhanvien> Nhanviens { get; set; }
 
@@ -82,12 +84,28 @@ public partial class MyHotelContext : DbContext
             entity.Property(e => e.LuongCoBan).HasColumnType("decimal(18, 2)");
             entity.Property(e => e.MaChucVu).HasMaxLength(20);
             entity.Property(e => e.PhuCap).HasColumnType("decimal(18, 2)");
-            entity.Property(e => e.TienLamThemGio).HasColumnType("decimal(18, 2)");
 
             entity.HasOne(d => d.MaChucVuNavigation).WithMany()
                 .HasForeignKey(d => d.MaChucVu)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Luong_ChucVu");
+        });
+
+        modelBuilder.Entity<LichLamViec>(entity =>
+        {
+            entity.HasKey(e => e.MaLich);
+            entity.ToTable("LichLamViec");
+
+            entity.Property(e => e.MaLich).ValueGeneratedOnAdd();
+            entity.Property(e => e.MaNhanVien).HasMaxLength(20);
+            entity.Property(e => e.NgayLamViec).HasColumnType("date");
+            entity.Property(e => e.CaLam).HasMaxLength(50);
+            entity.Property(e => e.GhiChu).HasMaxLength(255);
+
+            entity.HasOne(d => d.MaNhanVienNavigation).WithMany(p => p.LichLamViecs)
+                .HasForeignKey(d => d.MaNhanVien)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_LichLamViec_NhanVien");
         });
 
         modelBuilder.Entity<Nhanvien>(entity =>
@@ -153,7 +171,7 @@ public partial class MyHotelContext : DbContext
 
             entity.ToTable("ThuePhong");
 
-            entity.Property(e => e.MaPhieuThue).ValueGeneratedNever();
+            entity.Property(e => e.MaPhieuThue).ValueGeneratedOnAdd();
             entity.Property(e => e.GhiChu).HasMaxLength(255);
             entity.Property(e => e.GioCheckIn).HasColumnType("datetime");
             entity.Property(e => e.GioCheckOut).HasColumnType("datetime");
